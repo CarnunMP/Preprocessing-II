@@ -1,6 +1,4 @@
 .home {
-  border: 1px solid black;
-
   header.main {
     .flex(column, flex-start, center);
 
@@ -77,12 +75,11 @@
 
   .content-pick {
     padding-top: 30px;
-    background: pink;
     border-top: 2px dashed @navigation-border;
     // display: flex;
     // justify-content: space-between;
-    .flex(row, space-between, flex-start);
     margin: 0 10%;
+    .flex(row, space-between, flex-start);
 
     .destination {
       width: 30%;
@@ -90,7 +87,12 @@
 
       p {
         line-height: 2.5rem;
+        margin-bottom: 0.5rem;
       }
+    }
+
+    .btn {
+      .button(20rem, 4rem, 2rem, @white);
     }
   }
 }// home

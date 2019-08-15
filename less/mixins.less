@@ -5,3 +5,15 @@
     justify-content: @justification;
     align-items: @alignment;
 }
+
+.button(@width, @height, @font-size, @font-colour) {
+    width: @width;
+    height: @height;
+    font-size: @font-size;
+    color: @font-colour;
+
+    background: @button-bg;
+    border-radius: 10px;
+
+    .flex(row, center, center);
+}
