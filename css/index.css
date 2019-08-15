@@ -182,7 +182,6 @@ header.top div {
 }
 @media (max-width: 500px) {
   header.top div {
-    background: red;
     flex-direction: column;
   }
 }
@@ -199,7 +198,6 @@ header.top div nav {
 }
 @media (max-width: 500px) {
   header.top div nav {
-    background: green;
     margin: 0 auto;
     height: 3rem;
     width: 44rem;
@@ -356,20 +354,36 @@ header.top div a {
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    background: red;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: undefined;
-    align-items: undefined;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 3rem 0 4.5rem;
+  }
+}
 .home .content-pick .destination p {
   line-height: 2.5rem;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination p {
+    margin-bottom: 0.3rem;
+  }
 }
 .home .content-pick .btn {
   width: 20rem;
@@ -382,4 +396,9 @@ header.top div a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
+  }
 }

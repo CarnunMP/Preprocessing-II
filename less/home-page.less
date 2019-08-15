@@ -126,22 +126,37 @@
     .flex(row, space-between, flex-start);
 
     @media @mobile {
-      background: red;
-      .flex(column, undefined, undefined);
+      width: 90%;
+      margin: 0 auto;
+      .flex(column, flex-start, flex-start);
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+      @media @mobile {
+        width: 100%;
+        .flex(column, space-between, flex-start);
+        padding: 0 3rem 0 4.5rem;
+      }
+
       p {
         line-height: 2.5rem;
         margin-bottom: 0.5rem;
+
+        @media @mobile {
+          margin-bottom: 0.3rem;
+        }
       }
     }
 
     .btn {
       .button(20rem, 4rem, 2rem, @white);
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 }// home
