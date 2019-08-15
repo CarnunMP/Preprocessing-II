@@ -168,6 +168,42 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header.top div {
+  height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header.top div h1 {
+  margin-left: 10%;
+}
+header.top div nav {
+  margin-right: 11.5%;
+  width: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header.top div a {
+  text-decoration: none;
+  color: #212529;
+}
+header.top hr {
+  margin: 0;
+  border: none;
+  border-bottom: 2px dashed grey;
+}
+header.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+header.main .fun-bus {
+  width: 80%;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -224,4 +260,11 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+html {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+:root {
+  font-size: 100%;
 }
