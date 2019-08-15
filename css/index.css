@@ -180,6 +180,12 @@ header.top div {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header.top div {
+    background: red;
+    flex-direction: column;
+  }
+}
 header.top div h1 {
   margin-left: 10%;
 }
@@ -190,6 +196,14 @@ header.top div nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 500px) {
+  header.top div nav {
+    background: green;
+    margin: 0 auto;
+    height: 3rem;
+    width: 44rem;
+  }
 }
 header.top div a {
   text-decoration: none;
@@ -213,6 +227,11 @@ header.top div a {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home header.main {
+    background: pink;
+  }
+}
 .home header.main .fun-bus {
   width: 80%;
 }
@@ -232,6 +251,11 @@ header.top div a {
   justify-content: space-between;
   margin: 0 10%;
   margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    background: red;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -266,6 +290,11 @@ header.top div a {
   height: 38.5rem;
   padding: 3rem 7% 0;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    background: pink;
+  }
+}
 .home .content-destination h2 {
   padding-bottom: 1rem;
 }
@@ -280,6 +309,15 @@ header.top div a {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: undefined;
+    align-items: undefined;
+  }
 }
 .home .content-pick .destination {
   width: 30%;

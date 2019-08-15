@@ -1,17 +1,32 @@
 // Navigation Styles here
 header.top {
-    div {
+    div { // I'm not sure why, but the <hr> at the bottom of this section messes up without this!
         height: 8.5rem;
         .flex(row, space-between, center);
 
+        @media @mobile {
+            background: red;
+            flex-direction: column;
+        }
+
         h1 {
             margin-left: 10%;
+
+            @media @mobile {
+            }
         }
 
         nav {
             margin-right: 11.5%;
             width: 32rem;
             .flex(row, space-around, center);
+
+            @media @mobile {
+                background: green;
+                margin: 0 auto;
+                height: 3rem;
+                width: 44rem;
+            }
         }
 
         a {

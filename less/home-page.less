@@ -2,6 +2,10 @@
   header.main {
     .flex(column, flex-start, center);
 
+    @media @mobile {
+      background: pink;
+    }
+
     .fun-bus {
         width: 80%;
     }
@@ -26,6 +30,10 @@
 
     margin: 0 10%;
     margin-top: 3rem;   
+
+    @media @mobile {
+      background: red;
+    }
     
     .text-content {
       width: 48%;
@@ -64,6 +72,10 @@
     height: 38.5rem;
     padding: 3rem 7% 0;
 
+    @media @mobile {
+      background: pink;
+    }
+
     h2 {
       padding-bottom: 1rem;
     }
@@ -80,6 +92,11 @@
     // justify-content: space-between;
     margin: 0 10%;
     .flex(row, space-between, flex-start);
+
+    @media @mobile {
+      background: red;
+      .flex(column, undefined, undefined);
+    }
 
     .destination {
       width: 30%;
