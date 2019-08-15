@@ -1,4 +1,31 @@
 .home {
+  header.main {
+    .flex(column, flex-start, center);
+
+    .fun-bus {
+        width: 80%;
+
+        @media @mobile {
+          width: 95%;
+        }
+    }
+
+    .welcome {
+      margin: 0 10%;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px dashed @navigation-border;
+
+      @media @mobile {
+        height: 20rem;
+        width: 90%;
+      }
+
+        h2 {
+          margin-top: 2rem;
+          margin-bottom: 0.5rem;
+        }
+    }
+  } 
 
   .content-section {
     margin: 30px 0;
@@ -6,19 +33,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    margin: 0 10%;
+    margin-top: 3rem;   
+
+    @media @mobile {
+      margin: 0 5%;
+      margin-top: 3rem;
+      .flex(column, flex-start, center);
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        display: flex;
+      }
+
       img {
         border-radius: 10px;
+        
+        @media @mobile {
+          flex-grow: 1;
+        }
       }
     }
   }
@@ -27,9 +75,18 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .flex(column-reverse, flex-start, center);
+      padding-bottom: 4.5rem;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        padding-top: 2rem;
+      }
     }
 
     .img-content {
@@ -40,7 +97,20 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 0 auto;
+    .flex(column, flex-start, flex-start);
+    height: 38.5rem;
+    padding: 3rem 7% 0;
+
+    @media @mobile {
+      width: 90%;
+      padding: 3rem 0;
+      height: 33rem;
+    }
+
+    h2 {
+      padding-bottom: 1rem;
+    }
 
     img {
       border-radius: 10px;
@@ -50,12 +120,77 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    margin: 0 10%;
+    .flex(row, space-between, flex-start);
+
+    @media @mobile {
+      width: 90%;
+      margin: 0 auto;
+      .flex(column, flex-start, flex-start);
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        .flex(column, space-between, flex-start);
+        padding: 0 3rem 0 4.5rem;
+      }
+
+      p {
+        line-height: 2.5rem;
+        margin-bottom: 0.5rem;
+
+        @media @mobile {
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+
+    .btn {
+      .button(20rem, 4rem, 2rem, @white);
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
-}// home
+}
+
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  // Couldn't quite figure out how to trigger a media query on mouse press of one of the buttons... seems to require JS! (For now, 'display: none' overrides '.flex()'. But the form is live! Feel free to comment out 'display: none' to see it working.)
+  .flex(column, center, center);
+  display: none;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .box {
+    background: @white;
+    position: fixed;
+    padding: 3rem 2rem;
+    .flex(column, space-around, center);
+
+    .form-element {
+      .flex(column, space-between, flex-start);
+      margin: 1rem 0;
+    }
+  }
+}
