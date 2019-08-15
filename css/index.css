@@ -169,18 +169,18 @@ img {
   margin: 0 auto;
 }
 header.top div {
-  height: 5.5rem;
+  height: 8.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 header.top div h1 {
   margin-left: 10%;
 }
 header.top div nav {
   margin-right: 11.5%;
-  width: 20rem;
+  width: 32rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -189,6 +189,7 @@ header.top div nav {
 header.top div a {
   text-decoration: none;
   color: #212529;
+  font-size: 1.5rem;
 }
 header.top hr {
   margin: 0;
@@ -263,11 +264,4 @@ header.top hr {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
-}
-html {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-:root {
-  font-size: 100%;
 }
