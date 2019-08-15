@@ -334,7 +334,9 @@ header.top div a {
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    background: pink;
+    width: 90%;
+    padding: 3rem 0;
+    height: 33rem;
   }
 }
 .home .content-destination h2 {
