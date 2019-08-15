@@ -408,11 +408,11 @@ header.top div a {
   left: 0;
   height: 100%;
   width: 100%;
-  display: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .form .overlay {
   width: 100%;
