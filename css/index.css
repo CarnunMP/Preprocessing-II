@@ -222,7 +222,7 @@ header.top div a {
 .home header.main .welcome {
   margin: 0 10%;
   padding-bottom: 1.5rem;
-  border-bottom: 2px dashed grey;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home header.main .welcome h2 {
   margin-top: 2rem;
@@ -261,8 +261,7 @@ header.top div a {
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto 30px;
-  background: pink;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -278,11 +277,18 @@ header.top div a {
 }
 .home .content-pick {
   padding-top: 30px;
+  background: pink;
   border-top: 2px dashed #C0C0C0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 10%;
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination p {
+  line-height: 2.5rem;
 }

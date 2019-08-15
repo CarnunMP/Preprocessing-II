@@ -11,7 +11,7 @@
     .welcome {
       margin: 0 10%;
       padding-bottom: 1.5rem;
-      border-bottom: 2px dashed grey;
+      border-bottom: 2px dashed @navigation-border;
 
         h2 {
           margin-top: 2rem;
@@ -61,8 +61,7 @@
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
-    background: pink;
+    margin: 0 auto;
     .flex(column, flex-start, flex-start);
     height: 38.5rem;
     padding: 3rem 7% 0;
@@ -78,13 +77,20 @@
 
   .content-pick {
     padding-top: 30px;
+    background: pink;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    .flex(row, space-between, flex-start);
+    margin: 0 10%;
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      p {
+        line-height: 2.5rem;
+      }
     }
   }
 }// home
