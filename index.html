@@ -111,22 +111,36 @@
     </div>
 
     <div class="box">
-      <div class="form-element">
-        <label for="user">Name</label>
-        <input type="text" id="user">
-      </div>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email">
-      </div>
-      <div class="form-element">
-        <label for="phone-number">Phone number</label>
-        <input type="text" id="phone-number">
-      </div>
-      <div class="form-element">
-        <label for="special-instructions">Any special instructions?</label>
-        <textarea class="form-control" rows="5" id="special-instructions"></textarea>
-      </div>
+      <form action="#">
+        <div class="form-element">
+          <label for="user">Name</label>
+          <input type="text" id="user">
+        </div>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email">
+        </div>
+        <div class="form-element">
+          <label for="phone-number">Phone number</label>
+          <input type="text" id="phone-number">
+        </div>
+
+        <div class="form-element">
+          <label for="special-instructions">Any special instructions?</label>
+          <textarea rows="5" id="special-instructions"></textarea>
+        </div>
+
+        <div class="form-element">
+          <label for="sel1">Choose a Package</label>
+          <select id="sel1">
+            <option>Fun in the Sun</option>
+            <option>Mountain Excursion</option>
+            <option>Island Getaway</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Submit">
+      </form>
     </div>
   </div>
 

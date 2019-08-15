@@ -167,8 +167,10 @@
   left: 0;
   height: 100%;
   width: 100%;
+
+  // Couldn't quite figure out how to trigger a media query on mouse press of one of the buttons... seems to require JS! (For now, .flex() overrides display: none. But the form is live!)
+  display: none;
   .flex(column, center, center);
-  // background: red;
 
   .overlay {
     width: 100%;
